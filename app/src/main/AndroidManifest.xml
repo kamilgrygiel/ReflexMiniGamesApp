@@ -20,7 +20,8 @@
         <activity android:name=".SpeedGame" />
         <activity android:name=".ReflexGame" />
         <activity android:name=".ReflexSecondGame" />
-        <activity android:name=".DoubleClickGame"></activity>
+        <activity android:name=".DoubleClickGame" />
+        <activity android:name=".StatisticsActivity"></activity>
     </application>
 
 </manifest>

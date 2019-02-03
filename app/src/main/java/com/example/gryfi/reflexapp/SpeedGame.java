@@ -38,6 +38,8 @@ public class SpeedGame extends AppCompatActivity {
 
                 }
                 tv.setText("Count : " + count);
+                if(Statistics.game2 > count)
+                    Statistics.game2 = count;
                 startStop();
             }
         });
@@ -85,4 +87,5 @@ public class SpeedGame extends AppCompatActivity {
         countDownTimer.cancel();
         isTimerRunning = false;
     }
+
 }

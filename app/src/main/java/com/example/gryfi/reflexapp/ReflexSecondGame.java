@@ -19,6 +19,7 @@ public class ReflexSecondGame extends AppCompatActivity {
     Random random = new Random();
     int randomNumber;
     TextView tv;
+    Statistics statistics = new Statistics();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -78,6 +79,8 @@ public class ReflexSecondGame extends AppCompatActivity {
                 startButton.setEnabled(true);
                 Button1.setEnabled(false);
                 tv.setText(currentTime + " ms");
+                if(Statistics.game3 > currentTime)
+                    Statistics.game3 = currentTime;
             }
         });
         Button2.setOnClickListener(new View.OnClickListener() {
@@ -88,6 +91,8 @@ public class ReflexSecondGame extends AppCompatActivity {
                 startButton.setEnabled(true);
                 Button2.setEnabled(false);
                 tv.setText(currentTime + " ms");
+                if(Statistics.game3 > currentTime)
+                    Statistics.game3 = currentTime;
             }
         });
         Button3.setOnClickListener(new View.OnClickListener() {
@@ -98,6 +103,8 @@ public class ReflexSecondGame extends AppCompatActivity {
                 startButton.setEnabled(true);
                 Button3.setEnabled(false);
                 tv.setText(currentTime + " ms");
+                if(Statistics.game3 > currentTime)
+                    Statistics.game3 = currentTime;
             }
         });
 

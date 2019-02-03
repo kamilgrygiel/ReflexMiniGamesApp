@@ -55,11 +55,11 @@ public class ReflexGame extends AppCompatActivity {
                 currentTime = endTime - startTime;
                 mainButton.setBackgroundColor(ContextCompat.getColor(getApplicationContext(), R.color.red));
                 mainButton.setText(currentTime + " ms");
+                if(Statistics.game1 > currentTime)
+                    Statistics.game1 = currentTime;
                 startButton.setEnabled(true);
                 mainButton.setEnabled(false);
             }
         });
-
     }
-
 }

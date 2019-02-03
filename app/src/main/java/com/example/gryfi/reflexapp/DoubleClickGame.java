@@ -23,8 +23,6 @@ public class DoubleClickGame extends AppCompatActivity {
         mainButton = (Button) findViewById(R.id.mainButton1);
         resetButton = (Button) findViewById(R.id.resetButton1);
 
-        //mainButton.setEnabled(false);
-
         resetButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -49,10 +47,11 @@ public class DoubleClickGame extends AppCompatActivity {
                     mainButton.setEnabled(false);
                     currentTime = endTime - startTime;
                     mainButton.setText(currentTime + " ms");
+                    if(Statistics.game4 > currentTime)
+                        Statistics.game4 = currentTime;
                 }
             }
         });
-
     }
 
 }
