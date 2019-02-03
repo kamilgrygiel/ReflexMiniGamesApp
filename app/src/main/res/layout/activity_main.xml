@@ -7,6 +7,32 @@
     tools:context=".MainActivity">
 
     <Button
+        android:id="@+id/reflexGameButton2"
+        android:layout_width="165dp"
+        android:layout_height="122dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:text="Refleks Trudniejszy"
+        app:layout_constraintEnd_toStartOf="@+id/speedGameButton"
+        app:layout_constraintHorizontal_bias="0.272"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/reflexGameButton" />
+
+    <Button
+        android:id="@+id/speedGameButton2"
+        android:layout_width="165dp"
+        android:layout_height="122dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:text="Szybkosc Krótka"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/speedGameButton" />
+
+    <Button
         android:id="@+id/reflexGameButton"
         android:layout_width="165dp"
         android:layout_height="122dp"
@@ -17,6 +43,7 @@
         android:layout_marginRight="8dp"
         android:text="Refleks"
         app:layout_constraintEnd_toStartOf="@+id/speedGameButton"
+        app:layout_constraintHorizontal_bias="0.266"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -25,10 +52,18 @@
         android:layout_width="165dp"
         android:layout_height="122dp"
         android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
         android:text="Szybkosc"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="355dp"
+        android:layout_height="110dp"
+        android:text="STATYSTYKI"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="278dp" />
 
 </android.support.constraint.ConstraintLayout>

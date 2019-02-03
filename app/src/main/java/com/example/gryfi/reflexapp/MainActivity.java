@@ -8,7 +8,7 @@ import android.widget.Button;
 
  public class MainActivity extends AppCompatActivity {
 
-    Button speedGameBtn, reflexGameBtn;
+    Button speedGameBtn, reflexGameBtn, speedGameBtn2, reflexGameBtn2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -16,6 +16,8 @@ import android.widget.Button;
         setContentView(R.layout.activity_main);
         speedGameBtn = (Button) findViewById(R.id.speedGameButton);
         reflexGameBtn = (Button) findViewById(R.id.reflexGameButton);
+        speedGameBtn2 = (Button) findViewById(R.id.speedGameButton2);
+        reflexGameBtn2 = (Button) findViewById(R.id.reflexGameButton2);
 
         speedGameBtn.setOnClickListener(new View.OnClickListener(){
 
@@ -30,6 +32,19 @@ import android.widget.Button;
                 openReflexGame();
             }
         });
+        speedGameBtn2.setOnClickListener(new View.OnClickListener(){
+
+            @Override
+            public void onClick(View view){
+                openSpeedGame2();
+            }
+        });
+        reflexGameBtn2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openReflexGame2();
+            }
+        });
     }
      public void openSpeedGame(){
          Intent intent = new Intent(this, SpeedGame.class);
@@ -37,6 +52,14 @@ import android.widget.Button;
      }
      public void openReflexGame(){
          Intent intent = new Intent(this, ReflexGame.class);
+         startActivity(intent);
+     }
+     public void openSpeedGame2(){
+         Intent intent = new Intent(this, DoubleClickGame.class);
+         startActivity(intent);
+     }
+     public void openReflexGame2(){
+         Intent intent = new Intent(this, ReflexSecondGame.class);
          startActivity(intent);
      }
 }

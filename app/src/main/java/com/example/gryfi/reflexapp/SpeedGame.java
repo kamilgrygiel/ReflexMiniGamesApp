@@ -33,6 +33,10 @@ public class SpeedGame extends AppCompatActivity {
                 if(isFinished == false) {
                     count++;
                 }
+                else{
+                    timerTv.setText("Left: 0 ms");
+
+                }
                 tv.setText("Count : " + count);
                 startStop();
             }

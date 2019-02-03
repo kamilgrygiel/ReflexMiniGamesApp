@@ -1,9 +1,87 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ReflexSecondGame">
+    tools:context=".ReflexGame">
 
-</android.support.constraint.ConstraintLayout>
+    <Button
+        android:id="@+id/startButton1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="23dp"
+        android:text="START" />
+
+
+    <Button
+        android:id="@+id/Button1"
+        android:layout_width="100dp"
+        android:layout_height="200dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="199dp"
+        android:layout_toEndOf="@+id/Button3"
+        android:layout_toRightOf="@+id/Button3"
+        android:background="#ff0000"
+        android:text=""
+        android:textColor="#ffffff"
+        android:textSize="64dp" />
+
+    <Button
+        android:id="@+id/Button2"
+        android:layout_width="100dp"
+        android:layout_height="200dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="197dp"
+        android:layout_marginEnd="43dp"
+        android:layout_marginRight="43dp"
+        android:layout_toEndOf="@+id/Button1"
+        android:layout_toRightOf="@+id/Button1"
+        android:background="#ff0000"
+        android:text=""
+        android:textColor="#ffffff"
+        android:textSize="64dp" />
+
+    <Button
+        android:id="@+id/Button3"
+        android:layout_width="100dp"
+        android:layout_height="200dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="198dp"
+        android:background="#ff0000"
+        android:text=""
+        android:textColor="#ffffff"
+        android:textSize="64dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="42dp"
+        android:text="Czas Reakcji:"
+        android:textSize="40dp"/>
+
+    <TextView
+        android:id="@+id/textReactionTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="126dp"
+        android:text="0ms"
+        android:textSize="30dp" />
+</RelativeLayout>

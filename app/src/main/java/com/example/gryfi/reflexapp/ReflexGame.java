@@ -7,12 +7,17 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
+
+import java.util.Random;
 
 public class ReflexGame extends AppCompatActivity {
 
     Button startButton, mainButton;
 
     long startTime, endTime, currentTime;
+
+    Random random = new Random();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,7 +44,7 @@ public class ReflexGame extends AppCompatActivity {
                         mainButton.setText("PRESS");
                         mainButton.setEnabled(true);
                     }
-                }, 2000);
+                }, random.nextInt(4000));
             }
         });
 
